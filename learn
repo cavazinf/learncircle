@@ -1,0 +1,28 @@
+Obtendo o App Id (em get_app_id/route.js):
+Copy
+// Fazer uma chamada de API para obter o App Id
+const fetchAppId = async () => {
+    // Lógica para fazer a chamada de API e retornar o App Id
+    return appId;
+}
+Criando um Novo Usuário (em create_a_new_user/route.js):
+Copy
+// Enviar uma solicitação para criar um novo usuário
+const createUser = async (userId) => {
+    // Lógica para enviar a solicitação de criação de usuário com o userId fornecido
+    return newUser;
+}
+Adquirindo o Token de Sessão (em acquire_session_token/route.js):
+Copy
+// Fazer uma chamada de API para obter um token de sessão
+const getSessionToken = async (userId) => {
+    // Lógica para obter e retornar o token de sessão para o usuário com o userId fornecido
+    return sessionToken;
+}
+Inicializando o Usuário (em initialize_user/route.js):
+Copy
+// Enviar uma solicitação para inicializar a carteira do usuário
+const initializeUser = async (blockchainType, userId, pin, recoveryQuestion) => {
+    // Lógica para inicializar a carteira do usuário na blockchain especificada com o userId, PIN e pergunta de recuperação
+    return initializationData;
+}
