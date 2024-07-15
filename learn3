@@ -2,7 +2,7 @@
 const initializationData = await initializeUser("SCA", userId, pin, recoveryQuestion);
 Depois de adicionar essa linha, você precisará usar um ambiente de desenvolvimento ou testnet para financiar o SCA com tokens de teste. Em seguida, você pode fazer uma transação para enviar 1 USDC. Aqui está um exemplo simplificado do que você pode fazer:
 
-Copy
+
 // Financiar o SCA com tokens de teste
 const fundSCA = async (scaAddress, amount) => {
     // Lógica para enviar tokens de teste (por exemplo, ETH) para o endereço do SCA
