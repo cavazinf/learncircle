@@ -1,0 +1,23 @@
+// Criação de uma carteira controlada pelo desenvolvedor
+const createDeveloperWallet = () => {
+    // Lógica para criar uma carteira controlada pelo desenvolvedor
+    return "Developer wallet created successfully";
+}
+
+// Função para realizar uma transação
+const makeTransaction = (sender, recipient, amount) => {
+    // Lógica para realizar a transação entre remetente e destinatário
+    return `Transaction of ${amount} tokens from ${sender} to ${recipient} successful`;
+}
+
+// Inicialização da carteira controlada pelo desenvolvedor
+const developerWallet = createDeveloperWallet();
+
+// Parâmetros para a transação
+const sender = developerWallet;
+const recipient = "RecipientWalletAddress";
+const amount = 1;
+
+// Realização da transação
+const transactionResult = makeTransaction(sender, recipient, amount);
+console.log(transactionResult);
