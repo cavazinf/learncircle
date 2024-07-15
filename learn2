@@ -1,0 +1,26 @@
+Criar o Repositório via Linha de Comando:
+
+Abra o terminal e navegue até o diretório onde deseja armazenar o projeto.
+Execute os seguintes comandos:
+Copy
+# Inicializar um novo repositório Git
+git init
+
+# Criar um novo repositório no GitHub
+gh repo create Circle-User-Controlled-Wallet-Use-Case
+Adicionar o Estudo de Caso no arquivo README.md:
+
+Abra o arquivo README.md em um editor de texto.
+Adicione o estudo de caso seguindo a estrutura fornecida anteriormente.
+Adicionar, Commit e Empurrar as Mudanças para o GitHub:
+
+Execute os seguintes comandos no terminal:
+Copy
+# Adicionar todos os arquivos
+git add .
+
+# Commit das mudanças
+git commit -m "Adicionando estudo de caso de carteiras controladas pelo usuário"
+
+# Empurrar para o repositório remoto
+git push origin main
