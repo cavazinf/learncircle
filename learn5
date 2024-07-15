@@ -1,0 +1,27 @@
+// Exemplo de código Node.js para interagir com as APIs da Circle
+const express = require('express');
+const axios = require('axios');
+
+const app = express();
+const PORT = 3000;
+
+// Rota para lidar com pagamentos transfronteiriços
+app.post('/makePayment', async (req, res) => {
+    try {
+        // Lógica para fazer um pagamento transfronteiriço usando a API da Circle
+        const paymentResponse = await axios.post('https://api.circle.com/v1/payments', {
+            amount: 100,
+            currency: 'USD',
+            recipient: 'RecipientWalletAddress',
+            description: 'Payment for services rendered'
+        });
+
+        res.json(paymentResponse.data);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+});
+
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});
